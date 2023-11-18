@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish & Anamika 15 Years of Togetherness</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Recursive&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+    </style>
+</head>
+
+<body>
+    <h1>
+        Manish & Anamika
+    </h1>
+    <h2>
+        15 Years of Togetherness
+    </h2>
+    <hr>
+<div class="grid-container">
+  <div><a href="100_0527.JPG">
+    <img class='grid-item grid-item-1' src='100_0527.JPG' alt=''>
+    <p>"I'm so happy today!"</p></a>
+  </div>
+  <div><a href="100_0591.JPG">
+    <img class='grid-item grid-item-2' src='100_0591.JPG' alt=''>
+    <p>"Ya Hungry?"</p></a>
+  </div>
+  <div><a href="100_0592.JPG">
+    <img class='grid-item grid-item-3' src='100_0592.JPG' alt=''>
+    <p>"Yea"</p></a>
+  </div>
+  <div><a href="100_0687.JPG">
+    <img class='grid-item grid-item-4' src='100_0687.JPG' alt=''>
+    <p>"I love you so much!"</p></a>
+  </div>
+  <div><a href="100_0695.JPG">
+    <img class='grid-item grid-item-5' src='100_0695.JPG' alt=''>
+    <p>"Are you gunna clic the pic?"</p></a>
+  </div>
+  <div><a href="100_0723.JPG">
+    <img class='grid-item grid-item-6' src='100_0723.JPG' alt=''>
+    <p>"C'mon wife!"</p></a>
+  </div>
+  <div><a href="100_0813.JPG">
+    <img class='grid-item grid-item-7' src='100_0813.JPG' alt=''>
+    <p>"Flashing our teeth"</p></a>
+  </div>
+  <div><a href="DSC_0043.JPG">
+    <img class='grid-item grid-item-8' src='DSC_0043.JPG' alt=''>
+    <p>"A saturated smile"</p></a>
+  </div>
+  <div><a href="DSC_0209.JPG">
+    <img class='grid-item grid-item-9' src='DSC_0209.JPG' alt=''>
+    <p>"It's so cold!"</p></a>
+  </div>
+  <div><a href="DSC_0611.JPG">
+    <img class='grid-item grid-item-10' src='DSC_0611.JPG' alt=''>
+    <p>"Ha ha ha"</p></a>
+  </div>
+</div>
+<hr>
+<h1> The Countdown for 24 November 2023</h1>
+<h1 id="demo"></h1>
+<hr>
+<h1>Happy Marriage Anniversary</h1>
+<script>
+    // Converting string to required date format 
+    let deadline = new Date("Nov 24, 2023 12:00:00")
+                    .getTime();
+
+    // To call defined fuction every second
+    let x = setInterval(function () {
+         
+        // Getting current time in required format
+        let now = new Date().getTime();
+
+        // Calculating the difference
+        let t = deadline - now;
+
+        // Getting value of days, hours, minutes, seconds
+        let days = Math.floor(t / (1000 * 60 * 60 * 24));
+        let hours = Math.floor(
+            (t % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor(
+            (t % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor(
+            (t % (1000 * 60)) / 1000);
+
+        // Output the remaining time
+        document.getElementById("demo").innerHTML =
+            days + "d " + hours + "h " + 
+            minutes + "m " + seconds + "s ";
+
+        // Output for over time
+        if (t < 0) {
+            clearInterval(x);
+            document.getElementById("demo")
+                    .innerHTML = "EXPIRED";
+        }
+    }, 1000);
+</script>
+</body>
+
+</html>
